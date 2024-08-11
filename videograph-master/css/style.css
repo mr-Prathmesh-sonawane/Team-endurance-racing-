@@ -323,9 +323,12 @@ ol {
 }
 
 .header__logo {
+  z-index: 2px;
   padding: 0px 0;
 }
 .header__logo a {
+  z-index: 2px;
+
   display: inline-block;
 }
 
