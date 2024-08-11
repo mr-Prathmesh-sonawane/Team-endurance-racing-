@@ -323,7 +323,7 @@ ol {
 }
 
 .header__logo {
-  padding: 100px 0;
+  padding: 0px 0;
 }
 .header__logo a {
   display: inline-block;
@@ -331,7 +331,7 @@ ol {
 
 .header__nav__option {
   text-align: right;
-  padding: 28px 0px;
+  padding: 10px 0px;
 }
 
 .header__nav__menu {
