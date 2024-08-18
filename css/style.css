@@ -313,24 +313,40 @@ ol {
   Header
 -----------------------*/
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: #231140;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
 }
 
-.header__logo {
-  z-index: 2px;
-  padding: 0px 0;
+.header__logo img {
+  width: auto;
+  height: 110px; /* Adjust the height as needed */
+  object-fit: contain;
+  transform: translateY(-30px); /* Moves the image 20px upwards */
 }
-.header__logo a {
-  z-index: 2px;
 
-  display: inline-block;
+
+.header__logo {
+  position: absolute;
+  top: 0;    /* Ensures the logo is at the top */
+  left: 0;   /* Ensures the logo is at the left */
+  z-index: 1000; /* High z-index to ensure it stays above other elements */
+  padding: 0;   /* No padding for exact positioning */
+  margin: 0;    /* Remove any margin if there is one */
 }
+
+.header__logo a {
+  display: inline-block;
+  padding: 10px; /* Optional: Adjust this padding for space between the logo and the edges */
+}
+
+
+
+
 
 .header__nav__option {
   text-align: right;
