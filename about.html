@@ -425,12 +425,20 @@
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="footer__option__item">
-                            <!-- <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form> -->
+                            <div class="footer__option__item">
+                                <h5>Connect to us</h5>
+                                <ul>
+                                <div id="contactFormfor">
+                                    <li><input type="text" id="name" placeholder="Name" required> </li>
+                                    <li> <input type="email" id="email" placeholder="Email" required></li>
+                                    <li><input type="text" id="website" placeholder="Website"></li>
+                                    <li><textarea id="message" placeholder="Message" required></textarea></li>
+                                    <li><button type="submit" class="site-btn">Send Message</button></li>
+                                </div>
+
+                                </ul>
+                 </div>
+
                         </div>
                     </div>
                 </div>
@@ -438,21 +446,31 @@
             <div class="footer__copyright">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <!-- <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        </p> -->
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer Section End -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('name').value);
+            formData.append('email', document.getElementById('email').value);
+            formData.append('website', document.getElementById('website').value);
+            formData.append('message', document.getElementById('message').value);
+
+            fetch('https://script.google.com/macros/s/AKfycbwG8Ypo8HgzOyyr4EYZUQGyDTZAXFSNJf-PtH9aMNJC5HN8MOMEnzoasPv6GwuxUAqr/exec', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(result => alert('Message sent successfully!'))
+                .catch(error => alert('Failed to send message: ' + error));
+        });
+    </script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

@@ -249,6 +249,25 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('name').value);
+            formData.append('email', document.getElementById('email').value);
+            formData.append('website', document.getElementById('website').value);
+            formData.append('message', document.getElementById('message').value);
+
+            fetch('https://script.google.com/macros/s/AKfycbwG8Ypo8HgzOyyr4EYZUQGyDTZAXFSNJf-PtH9aMNJC5HN8MOMEnzoasPv6GwuxUAqr/exec', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(result => alert('Message sent successfully!'))
+                .catch(error => alert('Failed to send message: ' + error));
+        });
+    </script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
