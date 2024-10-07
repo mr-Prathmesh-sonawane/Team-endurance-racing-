@@ -2633,3 +2633,9 @@ body {
     gap: 1em; /* Further reduce gap for smaller screens */
   }
 }
+
+.sponsor-heading {
+  text-align: center; /* Centers the heading */
+  text-transform: uppercase; /* Makes the text all uppercase */
+  margin: 20px 0; /* Adds some margin above and below */
+}
