@@ -14,8 +14,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -26,6 +25,43 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/cardanimation.css" type="text/css">
+
+    <style>
+        .portfolio_item_video {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .portfolio_item_video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .portfolio_item_video .set-bg {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .portfolio_item_video .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 10px;
+            display: block;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,18 +80,18 @@
                     </div>
                 </div>
                 <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
+                    <div class="header_nav_option">
+                        <nav class="header_nav_menu mobile-menu">
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
                                 <li><a href="./about.html">About</a></li>
                                 <li class="active"><a href="./Gallery.html">Gallery</a></li>
                                 <li><a href="./Team.html">Our Team</a></li>
-                                <li><a href="./Sponsor.html">Our Sponsor</a>  </li>
+                                <li><a href="./Sponsor.html">Our Sponsor</a> </li>
                                 <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
-                        <div class="header__nav__social">
+                        <div class="header_nav_social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -101,138 +137,233 @@
                         <li data-filter=".photography">HAWK X2</li>
                         <li data-filter=".photography">HAWK X1</li>
 
-                        
+
                     </ul>
                 </div>
             </div>
             <div class="row portfolio__gallery">
+                <!-- Repeat the block 30 times to create 10 rows of 3 items each -->
+                <!-- Row 1 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/039BB7B8-2847-480D-AA69-98EABE77A701.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup">
-                                
-                            </a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Task 3</h4>
-                            <span>lorem</span>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <!--2-->
+                            <img src="./img/gallery/0A80E6EA-5703-407E-B50B-3824549BFDA9.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix web">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/2354A57C-5CA5-4B87-ACB6-C5DF275B31C3.jpg" alt="">
                         </div>
                     </div>
                 </div>
+
+                <!-- Repeat the above block for the next 9 rows -->
+                <!-- Row 2 -->
                 <div class="col-lg-4 col-md-6 col-sm-6 mix photography">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/32649D36-DB58-4976-93B9-40426F46BDDF.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix ecommerce">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Task 2</h4>
-                            <span>lorem</span>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/45EE142E-E673-484B-ABC9-95C64D52A796.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/62FFB02B-F571-4B3F-A720-09EA2986F2C2.jpg" alt="">
                         </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                    </div>
+                </div>
+
+                <!-- Add more rows similarly (Row 3 to Row 10) -->
+                <!--Row 3-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/9B98D2A3-ED2E-4EFF-BC5B-4A41E93CBE74.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/9ED833BF-FBAB-4602-B069-49EA390F9725.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix web">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-7.jpg">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/A45355EC-CEF7-4358-AC6E-A4B304597497.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix photography">
+                <!--Row4-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Tm</h4>
-                            <span>lorem</span>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/AFB7B3CB-4686-4F11-A2EF-78D67B7AF0D6.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix ecommerce">
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
                     <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="teamenduranceimage\about-banner.png">
-                            <a href="" class="play-btn video-popup"></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Team Endurance</h4>
-                            <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                            </ul>
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/BA334522-ACA3-4F48-B246-296AF8B52062.jpg" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/C4798BD0-6AF4-4289-82EC-415189CB8B00.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Row 5-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/CD9115DB-45D9-42EC-869E-5B3A621F5022.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0841.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0847.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Row 6-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0854.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0856.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0873.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Row 7-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0902.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0912.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/DSC_0914.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Row 8-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/F96E99D4-EA46-42B8-BC0E-0936B0112B0A.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/HAWK 5 Achievements.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/HAWK 6.0 International.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Row 9-->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/IMG_0743.HEIC" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/IMG_1637.HEIC" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/IMG_1638.HEIC" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 10 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+                    <div class="portfolio__item">
+                        <div class="portfolio_item_video set-bg" data-setbg="teamenduranceimage/about-banner.png">
+                            <img src="./img/gallery/IMG_1639.HEIC" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="pagination__option">
-                        <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
+                        <a href="#" class="arrow_pagination left_arrow"><span class="arrow_left"></span> Prev</a>
                         <a href="#" class="number__pagination">1</a>
                         <a href="#" class="number__pagination">2</a>
-                        <a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
+                        <a href="#" class="arrow_pagination right_arrow">Next <span class="arrow_right"></span></a>
                     </div>
                 </div>
             </div>
@@ -261,12 +392,12 @@
             <div class="footer__top">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
+                        <div class="footer_top_logo">
                             <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
+                        <div class="footer_top_social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -279,14 +410,14 @@
             <div class="footer__option">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
+                        <div class="footer_option_item">
                             <h5>About us</h5>
                             <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service production company specializing.</p>
                             <a href="./about.html" class="read__more">Read more <span class="arrow_right"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
+                        <div class="footer_option_item">
                             <h5>Pages</h5>
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
@@ -297,7 +428,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
+                        <div class="footer_option_item">
                             <h5>Our work</h5>
                             <ul>
                                 <li><a href="#">HAWK X5
@@ -315,19 +446,19 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
+                        <div class="footer_option_item">
                             <h5>Connect to us</h5>
                             <ul>
-                            <div id="contactFormfor">
-                                <li><input type="text" id="name" placeholder="Name" required> </li>
-                                <li> <input type="email" id="email" placeholder="Email" required></li>
-                                <li><input type="text" id="website" placeholder="Website"></li>
-                                <li><textarea id="message" placeholder="Message" required></textarea></li>
-                                <li><button type="submit" class="site-btn">Send Message</button></li>
-                            </div>
+                                <div id="contactFormfor">
+                                    <li><input type="text" id="name" placeholder="Name" required> </li>
+                                    <li> <input type="email" id="email" placeholder="Email" required></li>
+                                    <li><input type="text" id="website" placeholder="Website"></li>
+                                    <li><textarea id="message" placeholder="Message" required></textarea></li>
+                                    <li><button type="submit" class="site-btn">Send Message</button></li>
+                                </div>
 
                             </ul>
-             </div>
+                        </div>
 
                     </div>
                     <div class="col-lg-4 col-md-12">
@@ -339,7 +470,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
+                        <p class="footer_copyright_text">Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
